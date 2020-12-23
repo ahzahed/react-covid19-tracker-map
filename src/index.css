@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f6fa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* infoBox.jsx */
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* app.js */
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.app_left {
+  flex: 0.9;
+}
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+}
+
+/* TableData.js */
+.table {
+  margin-top: 20px;
+  overflow: scroll;
+  height: 400px;
+  color: #615d5d;
+}
+.table tr {
+  display: flex;
+  justify-content: space-between;
+}
+.table td {
+  padding: 0.5rem;
+}
+.table tr:nth-of-type(odd) {
+  background-color: #f3f2f8;
+}
